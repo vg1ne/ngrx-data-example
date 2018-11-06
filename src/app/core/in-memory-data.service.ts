@@ -76,13 +76,13 @@ export class InMemoryDataService {
 
 /**
  * Remap a known singular collection name ("hero")
- * to the plural collection name ("heroes"); else return the name
+ * to the plural collection name ("heroes$"); else return the name
  * @param name - collection name from the parsed URL
  */
 function mapCollectionName(name: string): string {
   return (
     ({
-      hero: 'heroes',
+      hero: 'heroes$',
       villain: 'villains'
     } as any)[name] || name
   );

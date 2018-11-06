@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/heroes', (req, res) => {
+router.get('/heroes$', (req, res) => {
   res.send([
     {
       id: 221,

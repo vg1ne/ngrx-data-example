@@ -11,7 +11,7 @@ by.addLocator(
 
 export class AppPage {
   navigateToHeroes() {
-    return browser.get('/heroes?e2e');
+    return browser.get('/heroes$?e2e');
   }
 
   navigateToVillains() {

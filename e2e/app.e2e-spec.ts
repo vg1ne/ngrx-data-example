@@ -8,7 +8,7 @@ describe('ngrx-data-lab App', () => {
   beforeEach(() => (page = new AppPage()));
 
   describe('Heroes', () => {
-    const entityName = 'heroes';
+    const entityName = 'heroes$';
     beforeEach(async () => await page.navigateToHeroes());
     runNavigationTests(entityName);
   });
